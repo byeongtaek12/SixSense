@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mypage3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+        * {
+            font-family: "Black Han Sans", serif;
+            margin: 0;
+        }
+
+        .navbar {
+            height: 200px;
+            border-bottom: 2px dotted #212529;
+        }
+
+        .navbar-brand {
+            margin: 50px auto 0px auto;
+            font-size: 400%;
+        }
+
+        .tag {
+            margin-top: 164px;
+            margin-right: -150px;
+        }
+
+        .mypage3container {
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            width: 60%;
+            margin: 5% auto;
+            gap: 20%;
+        }
+
+        .mypage3right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+        }
+
+        a {
+            color: #212529;
+        }
+
+
+        h2 {
+            border-bottom: 2px solid #212529;
+            padding-bottom: 1px;
+            margin-bottom: 20px;
+
+        }
+
+        h3 {
+            margin-top: 20px;
+            border-bottom: 2px solid #212529;
+        }
+    </style>
+
+    <script type="module">
+        $(document).ready(function () {
+            $("#six").click(function () {
+                window.location.href = "index.html";
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #EEF0FE;">
+        <div class="container-md">
+            <a id="six" class="navbar-brand" href="#" style="color: #212529;">Six Sense</a>
+            <img src="image/tag2.png" class="tag" alt="...">
+        </div>
+    </nav>
+    <div class="mypage3container">
+        <div class="mypage3left">
+            <div class="mypage3picture">
+                <img src="image/member2.jpg" class="img-thumbnail" alt="...">
+            </div>
+            <div class="mypage3leftdown">
+                <h3 class="name">김국민</h3>
+                <P>KIM GUKMIN<br> 1999.03.12<br>
+                    <a href="https://github.com/mxcoogi">Git Hub</a>
+                    <span>|</span>
+                    <a href="https://velog.io/@mxcoogi/posts">Velog</a>
+                </P>
+
+            </div>
+        </div>
+
+        <div class="mypage3right">
+            <div>
+                <h2>Introduce</h2>
+                <p>프로그래밍을 하면서 내가 의도한 대로 작동하는 프그램을 보며 흥미가 생겨 프로그래머의 꿈을 갖게 되었습니다.
+                    C언어와 파이썬을 주로 다뤄왔지만 백엔드 기술과 자바를 배워보고자 내일배움캠프에 지원하게 되었습니다.
+                    캠프를 진행하면서 많은 프로젝트를 진행하며 협업능력과 자바 문화를 배우는 것을 목표로 하고 있습니다.</p>
+            </div>
+            <div>
+                <h2>Work Style</h2>
+                <p>개발을 하면서 왜 여기서 이렇게 되는지에 대해 깊은 질문을 스스로 던지며 해결하는 타입입니다.
+                    좋은 결과물은 팀 모두가 서로 이해하고 소통하면서 나온다는 것을 개발경험을 통해 느꼈으며
+                    팀과 의사소통을 중요시 하며 질문하는 것 만큼 다른사람의 문제해결에 도움을 주는것도 좋아합니다.</p>
+            </div>
+            <div>
+                <h2>Aspiration</h2>
+                <p>기술 트렌드를 이끄는 개발자가 되고싶습니다. 매년 새로운 기술이 등장하는
+                    IT업계에서 기술을 따라가지 못하고 멈춰있는 개발자보단 새 기술을 따라가고 더 나아가서
+                    선도하는 개발자가 되고 싶습니다.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

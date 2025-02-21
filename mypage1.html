@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mypage3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+        * {
+            font-family: "Black Han Sans", serif;
+            margin: 0;
+        }
+
+        .navbar {
+            height: 200px;
+            border-bottom: 2px dotted #212529;
+        }
+
+        .navbar-brand {
+            margin: 50px auto 0px auto;
+            font-size: 400%;
+        }
+
+        .tag {
+            margin-top: 164px;
+            margin-right: -150px;
+        }
+
+        .mypage3container {
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            width: 60%;
+            margin: 5% auto;
+            gap: 20%;
+        }
+
+        .mypage3right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+        }
+
+        a {
+            color: #212529;
+        }
+
+
+        h2 {
+            border-bottom: 2px solid #212529;
+            padding-bottom: 1px;
+            margin-bottom: 20px;
+
+        }
+
+        h3 {
+            margin-top: 20px;
+            border-bottom: 2px solid #212529;
+        }
+    </style>
+
+    <script type="module">
+        $(document).ready(function () {
+            $("#six").click(function () {
+                window.location.href = "index.html";
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #EEF0FE;">
+        <div class="container-md">
+            <a id="six" class="navbar-brand" href="#" style="color: #212529;">Six Sense</a>
+            <img src="image/tag2.png" class="tag" alt="...">
+        </div>
+    </nav>
+    <div class="mypage3container">
+        <div class="mypage3left">
+            <div class="mypage3picture">
+                <img src="image/member1.jpg" class="img-thumbnail" alt="...">
+            </div>
+            <div class="mypage3leftdown">
+                <h3 class="name">박서하</h3>
+                <P>PARK SEOHA<br> 1993.06.26<br>
+                    <a href="https://github.com/classseoha">Git Hub</a>
+                    <span>|</span>
+                    <a href="https://velog.io/@classseoha/posts">Velog</a>
+                </P>
+
+            </div>
+        </div>
+
+        <div class="mypage3right">
+            <div>
+                <h2>Introduce</h2>
+                <p>기획·마케팅 업무를 하면서도 새로운 것을 배우고 업무에 적용하는 과정이 재미있었고, 지금은 기술적인 업무를 해보고 싶은 마음에 백엔드 개발자로 전향을 결심하게 되었습니다.
+                    현재 Java와 Python등 프로그래밍 언어를 공부하며 논리적인 사고력과 문제 해결 능력을 키우기 위해 노력하고 있으며, 배운 것을 실제 적용하는 과정에서 보람을 느끼고
+                    있습니다.</p>
+            </div>
+            <div>
+                <h2>Work Style</h2>
+                <p>성실함과 책임감을 바탕으로 맡은 업무를 끝까지 완수하는 스타일입니다.
+                    체계적인 계획을 세우고 효율적으로 실행하는 것을 중요하게 생각하며, 명확한 소통을 통해 원활한 협업을 지향합니다.
+                    ESTJ다운 조직력과 실행력을 강점으로 삼아 팀의 목표를 효과적으로 달성하는 데 기여하고자 합니다.</p>
+            </div>
+            <div>
+                <h2>Aspiration</h2>
+                <p>기획과 기술을 연결하는 개발자로 성장하는 것이 목표입니다.
+                    백엔드 개발자로서 탄탄한 기술력을 쌓아 나가며, 사용자에게 가치를 제공하는 서비스를 만드는 데 기여하고 싶습니다.
+                    새로운 도전을 두려워하지 않고 끊임없이 배우며, 팀과 함께 성장하는 개발자가 되겠습니다!
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
